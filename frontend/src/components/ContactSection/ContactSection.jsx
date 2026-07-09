@@ -91,7 +91,7 @@ const ContactSection = () => {
             setLoading(true);
 
             const response = await axios.post(
-                "http://localhost:5000/api/contact",
+                `${import.meta.env.VITE_API_URL}/contact`,
                 formData
             );
 
