@@ -1,0 +1,502 @@
+/* ==========================================
+            CONTACT SECTION
+========================================== */
+
+.contact{
+    background:linear-gradient(to bottom,#f7f9fc,#eef4fb);
+    padding:90px 0;
+    position:relative;
+}
+
+.contact .section-title{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 60px;
+}
+
+.contact .section-title span{
+    color:var(--primary);
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.contact .section-title h2{
+    margin:15px 0;
+    font-size:2.6rem;
+}
+
+.contact .section-title p{
+    color:var(--text-light);
+    line-height:1.8;
+}
+
+/* ==========================================
+            CONTACT GRID
+========================================== */
+
+.contact-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1.6fr .9fr;
+
+    gap:35px;
+
+    align-items:start;
+
+}
+
+/* ==========================================
+            CONTACT FORM
+========================================== */
+
+.contact-form{
+
+    background:linear-gradient(
+        145deg,
+        #ffffff,
+        #f5f9ff
+    );
+
+    padding:40px;
+
+    border-radius:24px;
+
+    border:1px solid #dce7f8;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.05);
+
+}
+
+.form-header{
+
+    margin-bottom:30px;
+
+}
+
+.form-header h3{
+
+    color:var(--heading);
+
+    font-size:1.8rem;
+
+    margin-bottom:8px;
+
+}
+
+.form-header p{
+
+    color:var(--text-light);
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+            INPUTS
+========================================== */
+
+.input-group{
+
+    position:relative;
+
+    margin-bottom:20px;
+
+}
+
+.input-icon{
+
+    position:absolute;
+
+    left:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:var(--primary);
+
+    font-size:15px;
+
+}
+
+.contact-form input,
+.contact-form select{
+
+    width:100%;
+
+    height:56px;
+
+    padding-left:52px;
+
+    padding-right:18px;
+
+    border:1px solid #d8e4f5;
+
+    border-radius:14px;
+
+    background:#fff;
+
+    font-size:.95rem;
+
+    transition:.3s;
+
+    outline:none;
+
+    box-sizing:border-box;
+
+}
+
+.contact-form textarea{
+
+    width:100%;
+
+    border:1px solid #d8e4f5;
+
+    border-radius:14px;
+
+    padding:18px;
+
+    background:#fff;
+
+    resize:none;
+
+    min-height:170px;
+
+    outline:none;
+
+    font-size:.95rem;
+
+    margin-bottom:22px;
+
+    box-sizing:border-box;
+
+    transition:.3s;
+
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(22,84,176,.12);
+
+}
+
+/* ==========================================
+            BUTTON
+========================================== */
+
+.contact-btn{
+
+    width:100%;
+
+    height:58px;
+
+    border-radius:14px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+/* ==========================================
+            CONTACT INFO PANEL
+========================================== */
+
+.contact-info{
+
+    background:linear-gradient(
+        180deg,
+        var(--primary),
+        #082947
+    );
+
+    border-radius:24px;
+
+    padding:40px 30px;
+
+    color:#fff;
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:100%;
+
+}
+
+.contact-info::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+    height:260px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:50%;
+
+    top:-120px;
+    right:-80px;
+
+}
+
+.contact-info h3{
+
+    color:#fff;
+
+    font-size:1.8rem;
+
+    margin-bottom:12px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.contact-text{
+
+    color:rgba(255,255,255,.82);
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* ==========================================
+            INFO CARD
+========================================== */
+
+.info-card{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    padding:18px;
+
+    margin-bottom:18px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    transition:.35s;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.info-card:last-child{
+
+    margin-bottom:0;
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-6px);
+
+    background:rgba(255,255,255,.13);
+
+}
+
+.info-icon{
+
+    width:55px;
+
+    height:55px;
+
+    min-width:55px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.15);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#FFD24C;
+
+    font-size:20px;
+
+}
+
+.info-card h4{
+
+    color:#fff;
+
+    margin-bottom:6px;
+
+    font-size:1.05rem;
+
+}
+
+.info-card p{
+
+    color:rgba(255,255,255,.82);
+
+    line-height:1.7;
+
+    font-size:.95rem;
+
+}
+
+/* ==========================================
+            GOOGLE MAP
+========================================== */
+
+.map-section{
+
+    margin-top:60px;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.map-section iframe{
+
+    width:100%;
+
+    height:420px;
+
+    border:none;
+
+    display:block;
+
+}
+
+/* ==========================================
+            RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+.contact-wrapper{
+
+    grid-template-columns:1fr;
+
+}
+
+.contact-info{
+
+    padding:35px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.contact{
+
+    padding:70px 0;
+
+}
+
+.contact-form{
+
+    padding:28px;
+
+}
+
+.contact-info{
+
+    padding:28px;
+
+}
+
+.contact .section-title h2{
+
+    font-size:2rem;
+
+}
+
+.map-section iframe{
+
+    height:320px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.contact-form{
+
+    padding:22px;
+
+}
+
+.contact-info{
+
+    padding:22px;
+
+}
+
+.form-header h3{
+
+    font-size:1.5rem;
+
+}
+
+.contact-info h3{
+
+    font-size:1.5rem;
+
+}
+
+.info-card{
+
+    gap:14px;
+
+    padding:15px;
+
+}
+
+.info-icon{
+
+    width:48px;
+
+    height:48px;
+
+    min-width:48px;
+
+    font-size:18px;
+
+}
+
+.map-section iframe{
+
+    height:260px;
+
+}
+
+}

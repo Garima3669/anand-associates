@@ -1,0 +1,227 @@
+/* ======================================
+            WHY CHOOSE US
+====================================== */
+
+.why{
+    background:var(--section-bg);
+    padding:70px 0;
+}
+
+/* =========================
+        TOP SECTION
+========================= */
+
+.why-top{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+/* =========================
+          IMAGE
+========================= */
+
+.why-image{
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:var(--shadow-lg);
+}
+
+.why-image img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    display:block;
+    transition:.4s;
+}
+
+.why-image:hover img{
+    transform:scale(1.05);
+}
+
+/* =========================
+         CONTENT
+========================= */
+
+.section-badge{
+    display:inline-block;
+    padding:8px 18px;
+    background:var(--primary-light);
+    color:var(--primary);
+    border-radius:30px;
+    font-size:.9rem;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.why-content h2{
+    font-size:2.2rem;
+    line-height:1.25;
+    margin-bottom:18px;
+    color:var(--heading);
+}
+
+.why-content p{
+    color:var(--text-light);
+    line-height:1.8;
+    margin-bottom:28px;
+    max-width:520px;
+}
+
+/* =========================
+        FEATURES
+========================= */
+
+.why-features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.feature-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:14px 16px;
+    background:var(--white);
+    border-radius:12px;
+    box-shadow:var(--shadow-sm);
+    transition:.3s;
+}
+
+.feature-item:hover{
+    transform:translateY(-3px);
+    box-shadow:var(--shadow-md);
+}
+
+.feature-item svg{
+    color:var(--primary);
+    font-size:1rem;
+}
+
+.feature-item span{
+    font-size:.95rem;
+    font-weight:500;
+    color:var(--heading);
+}
+
+/* =========================
+        MINI CARDS
+========================= */
+
+.why-cards{
+    margin-top:45px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+
+.mini-card{
+    background:var(--white);
+    border-radius:18px;
+    padding:28px 20px;
+    text-align:center;
+    box-shadow:var(--shadow-sm);
+    transition:.3s;
+}
+
+.mini-card:hover{
+    transform:translateY(-8px);
+    box-shadow:var(--shadow-lg);
+}
+
+.mini-card svg{
+    font-size:2rem;
+    color:var(--secondary);
+    margin-bottom:15px;
+}
+
+.mini-card h3{
+    font-size:1.8rem;
+    color:var(--primary);
+    margin-bottom:6px;
+}
+
+.mini-card p{
+    margin:0;
+    color:var(--text-light);
+    font-size:.95rem;
+}
+
+/* =========================
+      RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+.why-top{
+    grid-template-columns:1fr;
+    gap:40px;
+}
+
+.why-content{
+    text-align:center;
+}
+
+.why-content p{
+    margin:auto auto 28px;
+}
+
+.why-features{
+    grid-template-columns:1fr 1fr;
+}
+
+.why-cards{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.why{
+    padding:50px 0;
+}
+
+.why-content h2{
+    font-size:1.8rem;
+}
+
+.why-image img{
+    height:320px;
+}
+
+.why-features{
+    grid-template-columns:1fr;
+}
+
+.why-cards{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:576px){
+
+.section-badge{
+    font-size:.8rem;
+}
+
+.why-content h2{
+    font-size:1.6rem;
+}
+
+.why-content p{
+    font-size:.95rem;
+}
+
+.feature-item{
+    padding:12px 14px;
+}
+
+.mini-card{
+    padding:22px 16px;
+}
+
+}

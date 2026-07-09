@@ -1,0 +1,189 @@
+/*=============================
+      LEADERSHIP
+==============================*/
+
+.leadership{
+    padding:80px 0;
+    background:#fff;
+}
+
+.section-title{
+    text-align:center;
+    max-width:720px;
+    margin:auto;
+    margin-bottom:50px;
+}
+
+.section-title span{
+
+    color:#D4AF37;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    font-size:.85rem;
+
+}
+
+.section-title h2{
+
+    margin:12px 0;
+    color:#0F4C81;
+    font-size:2.4rem;
+
+}
+
+.section-title p{
+
+    color:#667085;
+    line-height:1.8;
+
+}
+
+/*========================*/
+
+.leader-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+
+}
+
+/*========================*/
+
+.leader-card{
+
+    display:flex;
+    align-items:center;
+    gap:25px;
+
+    background:#fff;
+
+    border:1px solid #E8EEF5;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    box-shadow:0 12px 30px rgba(15,76,129,.07);
+
+}
+
+.leader-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#D4AF37;
+
+    box-shadow:0 25px 45px rgba(15,76,129,.12);
+
+}
+
+.leader-image{
+
+    width:260px;
+    height:320px;
+    overflow:hidden;
+    flex-shrink:0;
+
+}
+
+.leader-image img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+
+}
+
+.leader-card:hover img{
+
+    transform:scale(1.06);
+
+}
+
+.leader-content{
+
+    padding-right:25px;
+
+}
+
+.leader-icon{
+
+    width:55px;
+    height:55px;
+
+    background:linear-gradient(135deg,#D4AF37,#B8860B);
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+.leader-content h3{
+
+    color:#0F4C81;
+    font-size:1.6rem;
+
+}
+
+.leader-content span{
+
+    display:block;
+    margin:8px 0 15px;
+
+    color:#D4AF37;
+
+    font-weight:600;
+
+}
+
+.leader-content p{
+
+    color:#667085;
+
+    line-height:1.8;
+
+}
+
+/*========================*/
+
+@media(max-width:991px){
+
+.leader-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.leader-card{
+
+flex-direction:column;
+
+}
+
+.leader-image{
+
+width:100%;
+height:340px;
+
+}
+
+.leader-content{
+
+padding:25px;
+
+}
+
+}

@@ -1,0 +1,319 @@
+/* =====================================================
+                CSS VARIABLES
+===================================================== */
+
+:root{
+
+    /* Brand Colors */
+    --primary:#0B3D91;
+    --primary-dark:#082E6A;
+    --primary-light:#E8F1FF;
+
+    --secondary:#D4AF37;
+    --secondary-dark:#B78F18;
+    --secondary-light:#F9EFC9;
+
+    /* Neutral Colors */
+    --white:#FFFFFF;
+    --black:#000000;
+
+    --bg-color:#F8FAFC;
+    --section-bg:#F4F7FB;
+
+    /* Text Colors */
+    --heading:#1E293B;
+    --text:#475569;
+    --text-light:#64748B;
+
+    /* Border */
+    --border:#E2E8F0;
+
+    /* Status */
+    --success:#16A34A;
+    --danger:#DC2626;
+    --warning:#F59E0B;
+    --info:#0284C7;
+
+    /* Shadows */
+    --shadow-sm:0 2px 8px rgba(15,23,42,.05);
+    --shadow-md:0 8px 20px rgba(15,23,42,.08);
+    --shadow-lg:0 20px 40px rgba(15,23,42,.12);
+
+    /* Border Radius */
+    --radius-sm:8px;
+    --radius-md:12px;
+    --radius-lg:18px;
+    --radius-xl:28px;
+    --radius-round:50%;
+
+    /* Transition */
+    --transition:all .35s ease;
+
+    /* Layout */
+    --container-width:1280px;
+    --navbar-height:74px;
+}
+
+
+/* =====================================================
+                    RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:var(--bg-color);
+    color:var(--text);
+    overflow-x:hidden;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul,
+ol{
+    list-style:none;
+}
+
+button,
+input,
+textarea,
+select{
+    border:none;
+    outline:none;
+    font-family:inherit;
+}
+
+button{
+    cursor:pointer;
+}
+
+textarea{
+    resize:none;
+}
+
+
+/* =====================================================
+                TYPOGRAPHY
+===================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color:var(--heading);
+    font-weight:700;
+    line-height:1.2;
+}
+
+h1{
+    font-size:3.5rem;
+}
+
+h2{
+    font-size:2.8rem;
+}
+
+h3{
+    font-size:2rem;
+}
+
+p{
+    color:var(--text);
+    font-size:1rem;
+}
+
+
+/* =====================================================
+                COMMON CLASSES
+===================================================== */
+
+.container{
+    width:90%;
+    max-width:var(--container-width);
+    margin:auto;
+}
+
+.section{
+    padding:70px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:700px;
+    margin:auto;
+    color:var(--text-light);
+}
+
+.primary-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:14px 30px;
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    border-radius:var(--radius-md);
+
+    font-weight:600;
+
+    transition:var(--transition);
+}
+
+.primary-btn:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-3px);
+}
+
+.secondary-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:14px 30px;
+
+    background:var(--secondary);
+
+    color:var(--white);
+
+    border-radius:var(--radius-md);
+
+    font-weight:600;
+
+    transition:var(--transition);
+}
+
+.secondary-btn:hover{
+
+    background:var(--secondary-dark);
+
+    transform:translateY(-3px);
+}
+
+.card{
+
+    background:var(--white);
+
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow-md);
+
+    transition:var(--transition);
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-lg);
+}
+
+
+/* =====================================================
+                CUSTOM SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:var(--section-bg);
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--primary);
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:var(--primary-dark);
+}
+
+
+/* =====================================================
+                RESPONSIVE
+===================================================== */
+
+@media(max-width:992px){
+
+    h1{
+        font-size:2.8rem;
+    }
+
+    h2{
+        font-size:2.2rem;
+    }
+
+    .section{
+        padding:70px 0;
+    }
+
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2.2rem;
+    }
+
+    h2{
+        font-size:1.8rem;
+    }
+
+    .container{
+        width:94%;
+    }
+
+}
+
+@media(max-width:576px){
+
+    h1{
+        font-size:1.9rem;
+    }
+
+    h2{
+        font-size:1.6rem;
+    }
+
+    .section{
+        padding:60px 0;
+    }
+
+}
